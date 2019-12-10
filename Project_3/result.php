@@ -4,46 +4,45 @@
                 <h1>Dungeons and Dragons</h1>
                 <link type="text/css" rel="stylesheet" href="styles/mystyles.css" media="screen">
        </head>
-       <div id=banner>
 <?php
-    if($_COOKIE['race'] == 'dwarf') {
-        echo '<script type="text/javascript">';
-        echo '$(document).ready(getDwarf(){});';
-        echo '</script>';
-    } else if($_COOKIE['race'] == 'elf') {
-        echo '<script type="text/javascript">';
-        echo '$(document).ready(getElf(){});';
-        echo '</script>';
-    } else if($_COOKIE['race'] == 'halfling') {
-        echo '<script type="text/javascript">';
-        echo '$(document).ready(getHalfling(){});';
-        echo '</script>';
-    } else if($_COOKIE['race'] == 'human') {
-        echo '<script type="text/javascript">';
-        echo '$(document).ready(getHuman(){});';
-        echo '</script>';
+    if($_COOKIE['race'] == 'Dwarf') {
+        echo '<span style="font-size:1.05em;color:white;text-align:center;">Your chosen race is Dwarf! Click the Dwarf button below to see your stats and some information about your chosen race! You can also click a different button to view the other options!';
+    } else if($_COOKIE['race'] == 'Elf') {
+        echo '<span style="font-size:1.05em;color:white;text-align:center;">Your chosen race is Elf! Click the Elf button below to see your stats and some information about your chosen race! You can also click a different button to view the other options!';
+    } else if($_COOKIE['race'] == 'Halfling') {
+        echo '<span style="font-size:1.05em;color:white;text-align:center;">Your chosen race is Halfling! Click the Halfling button below to see your stats and some information about your chosen race! You can also click a different button to view the other options!';
+    } else if($_COOKIE['race'] == 'Human') {
+        echo '<span style="font-size:1.05em;color:white;text-align:center;">Your chosen race is Human! Click the Human button below to see your stats and some information about your chosen race! You can also click a different button to view the other options!';
     }
-    if($_COOKIE['class'] == 'cleric') {
-        echo '<script type="text/javascript">';
-        echo '$(document).ready(getCleric(){});';
-        echo '</script>';
-    } else if($_COOKIE['class'] == 'wizard') {
-        echo '<script type="text/javascript">';
-        echo '$(document).ready(getElf(){});';
-        echo '</script>';
-    } else if($_COOKIE['class'] == 'fighter') {
-        echo '<script type="text/javascript">';
-        echo '$(document).ready(getHalfling(){});';
-        echo '</script>';
-    } else if($_COOKIE['class'] == 'rogue') {
-        echo '<script type="text/javascript">';
-        echo '$(document).ready(getRogue(){});';
-        echo '</script>';
+    ?>
+    <br><br>
+    <?php
+    if($_COOKIE['class'] == 'Cleric') {
+        echo 'Your chosen class is Cleric! Click the Cleric button below to see your hit die! You can also click a different button to view the other options!';
+    } else if($_COOKIE['class'] == 'Wizard') {
+        echo 'Your chosen class is Wizard! Click the Wizard button below to see your hit die! You can also click a different button to view the other options!';
+    } else if($_COOKIE['class'] == 'Fighter') {
+        echo 'Your chosen class is Fighter! Click the Wizard button below to see your hit die! You can also click a different button to view the other options!';
+    } else if($_COOKIE['class'] == 'Rogue') {
+        echo 'Your chosen class is Rogue! Click the Rogue button below to see your hit die! You can also click a different button to view the other options!';
     }
 ?>
+       <div id=banner>
+        <h2 style="color:black">Press the button corresponding to your chosen race:</h2>
+            <button onclick="getDwarf()">Dwarf</button>
+            <button onclick="getElf()">Elf</button>
+            <button onclick="getHalfling()">Halfling</button>
+            <button onclick="getHuman()">Human</button>
+            <br>
+        <h2 style="color:black">Press one of these buttons to pick your class:</h2>
+            <button onclick="getCleric()">Cleric</button>
+            <button onclick="getWizard()">Wizard</button>
+            <button onclick="getFighter()">Fighter</button>
+            <button onclick="getRogue()">Rogue</button>
+            <br><br><br>
 <html>
     <body>
-        <table>
+        <table align="center">
             <tr>
 	            <td id='raceNameLabel'>Race Name</td >
                 <td id='strengthLabel'>Strength</td >
@@ -65,8 +64,10 @@
                 <td id='speed'> </td >
             </tr >
         </table>
-        <body id='alignment'>
-        <table>
+        <p id='alignment' style="color:black"></p>
+        <p id='age' style="color:black"></p>
+        <p id='size' style="color:black"></p>
+        <table align="center">
             <tr>
                 <td id='classNameLabel'>Class Name</td >
                 <td id='hitDieLabel'>Hit Die</td >
@@ -75,5 +76,9 @@
                 <td id='className'> </td >
                 <td id='hit_die'> </td >
             </tr>
+            <br><br>
         </table>
+        <p style="color:black;font-size:0.75em;text-align:left;">Background image courtesy of Dungeons and Dragons: Warriors of Waterdeep,</p>
+        <p style="color:black;font-size:0.75em;text-align:left;">no copyright infringement is intended.</p>
+        <script src ="getAPI.js"> </script>
 </html>

@@ -8,15 +8,19 @@ var getDwarf = function() {
         var ability_bonuses = data.ability_bonuses;
         var speed = data.speed;
         var alignment = data.alignment;
+        var age = data.age;
+        var size = data.size_description;
         document.getElementById('raceName').innerHTML = name;
         document.getElementById('strength').innerHTML = ability_bonuses[0];
         document.getElementById('dexterity').innerHTML = ability_bonuses[1];
-        document.getElementById('constituion').innerHTML = ability_bonuses[2];
+        document.getElementById('constitution').innerHTML = ability_bonuses[2];
         document.getElementById('intelligence').innerHTML = ability_bonuses[3];
         document.getElementById('wisdom').innerHTML = ability_bonuses[4];
         document.getElementById('charisma').innerHTML = ability_bonuses[5];
         document.getElementById('speed').innerHTML = speed;
         document.getElementById('alignment').innerHTML = alignment;
+        document.getElementById('age').innerHTML = age;
+        document.getElementById('size').innerHTML = size;
  };    
 request.send();
 }
@@ -30,15 +34,19 @@ var getElf = function() {
         var ability_bonuses = data.ability_bonuses;
         var speed = data.speed;
         var alignment = data.alignment;
+        var age = data.age;
+        var size = data.size_description;
         document.getElementById('raceName').innerHTML = name;
         document.getElementById('strength').innerHTML = ability_bonuses[0];
         document.getElementById('dexterity').innerHTML = ability_bonuses[1];
-        document.getElementById('constituion').innerHTML = ability_bonuses[2];
+        document.getElementById('constitution').innerHTML = ability_bonuses[2];
         document.getElementById('intelligence').innerHTML = ability_bonuses[3];
         document.getElementById('wisdom').innerHTML = ability_bonuses[4];
         document.getElementById('charisma').innerHTML = ability_bonuses[5];
         document.getElementById('speed').innerHTML = speed;
         document.getElementById('alignment').innerHTML = alignment;
+        document.getElementById('age').innerHTML = age;
+        document.getElementById('size').innerHTML = size;
  };    
 request.send();
 }
@@ -52,15 +60,19 @@ var getHalfling = function() {
         var ability_bonuses = data.ability_bonuses;
         var speed = data.speed;
         var alignment = data.alignment;
+        var age = data.age;
+        var size = data.size_description;
         document.getElementById('raceName').innerHTML = name;
         document.getElementById('strength').innerHTML = ability_bonuses[0];
         document.getElementById('dexterity').innerHTML = ability_bonuses[1];
-        document.getElementById('constituion').innerHTML = ability_bonuses[2];
+        document.getElementById('constitution').innerHTML = ability_bonuses[2];
         document.getElementById('intelligence').innerHTML = ability_bonuses[3];
         document.getElementById('wisdom').innerHTML = ability_bonuses[4];
         document.getElementById('charisma').innerHTML = ability_bonuses[5];
         document.getElementById('speed').innerHTML = speed;
         document.getElementById('alignment').innerHTML = alignment;
+        document.getElementById('age').innerHTML = age;
+        document.getElementById('size').innerHTML = size;
  };    
 request.send();
 }
@@ -74,15 +86,19 @@ var getHuman = function() {
         var ability_bonuses = data.ability_bonuses;
         var speed = data.speed;
         var alignment = data.alignment;
+        var age = data.age;
+        var size = data.size_description;
         document.getElementById('raceName').innerHTML = name;
         document.getElementById('strength').innerHTML = ability_bonuses[0];
         document.getElementById('dexterity').innerHTML = ability_bonuses[1];
-        document.getElementById('constituion').innerHTML = ability_bonuses[2];
+        document.getElementById('constitution').innerHTML = ability_bonuses[2];
         document.getElementById('intelligence').innerHTML = ability_bonuses[3];
         document.getElementById('wisdom').innerHTML = ability_bonuses[4];
         document.getElementById('charisma').innerHTML = ability_bonuses[5];
         document.getElementById('speed').innerHTML = speed;
         document.getElementById('alignment').innerHTML = alignment;
+        document.getElementById('age').innerHTML = age;
+        document.getElementById('size').innerHTML = size;
  };    
 request.send();
 }
